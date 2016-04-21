@@ -2,7 +2,6 @@ var DnaTranscriber = require('./rna-transcription');
 var dnaTranscriber = new DnaTranscriber();
 
 describe('toRna()', function() {
-
   it('transcribes cytosine to guanine', function() {
     expect(dnaTranscriber.toRna('C')).toEqual('G');
   });
@@ -20,7 +19,6 @@ describe('toRna()', function() {
   });
 
   it('transcribes all dna nucleotides to their rna complements', function() {
-    expect(dnaTranscriber.toRna('ACGTGGTCTTAA'))
-        .toEqual('UGCACCAGAAUU');
+    expect(dnaTranscriber.toRna('ACGTGGTCTTAA')).toEqual('UGCACCAGAAUU');
   });
 });
